@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/home.scss";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
+		<nav className="navbar navbar-dark bg-info">
+			<a className="navbar-brand" href="#">
+				<img
+					src="data:image/png;base64,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"
+					width="30"
+					height="30"
+					className="d-inline-block align-top kobe"
+					alt=""
+				/>
+				Contact List
+			</a>
 		</nav>
 	);
 };
