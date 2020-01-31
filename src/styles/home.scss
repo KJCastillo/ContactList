@@ -6,3 +6,24 @@
     border-radius: 10px;
     padding-right: 1px;
 }
+
+.link {
+    color: tomato;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.link:active, .link:hover, .link:visited, .link:link {
+  color: tomato;
+  text-decoration: none;
+}
+
+.contactbtn {
+    margin: 20px;
+}
+
+.list-group-item {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

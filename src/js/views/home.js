@@ -28,7 +28,9 @@ export const Home = () => {
 					Save
 				</button>
 			</form>
-			<Link to="/contacts">Go to Contacts Page</Link>
+			<Link className="link" to="/contacts">
+				Go to Contacts Page
+			</Link>
 		</div>
 	);
 };
